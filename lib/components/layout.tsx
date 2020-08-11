@@ -34,7 +34,6 @@ const Layout = ({ children, meta }: any) => {
 
   const normalizedTitle = encodeCharacterForLink(meta?.title)
   const tweetlink = `https://twitter.com/intent/tweet?text=${normalizedTitle}%20-%20HelloRusk%20Official%20Website%0a&url=https://${BLOG.domain}${asPath}`
-  const hatenalink = `https://b.hatena.ne.jp/add?mode=confirm&url=https://${BLOG.domain}${asPath}&title=${normalizedTitle}"`
 
   const [toasts, setToast] = useToasts()
   const click = () => setToast({ text: 'Thank you for sharing!', delay: 10000 })
@@ -76,12 +75,6 @@ const Layout = ({ children, meta }: any) => {
         {children}
         {inDetailPage && (
           <div className="share-sns">
-            <Spacer y={0.5} />
-            <Button type="secondary" onClick={click} ghost>
-              <Link href={hatenalink} target="_blank">
-                Share on Hatena
-              </Link>
-            </Button>
             <Spacer y={0.5} />
             <Button type="success" onClick={click} ghost>
               <Link href={tweetlink} target="_blank">
