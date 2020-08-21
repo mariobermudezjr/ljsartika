@@ -4,6 +4,7 @@ import BLOG from "../../blog.config";
 import useConfigs from "../states/config-context";
 import Github from "./icons/github";
 import Twitter from "./icons/twitter";
+import LinkedIn from "./icons/linkedin";
 import Mail from "./icons/mail";
 import Sun from "./icons/sun";
 import Moon from "./icons/moon";
@@ -23,6 +24,10 @@ const Contacts = () => {
   const twitter = useMemo(() => {
     if (!BLOG.twitter) return null;
     return `https://twitter.com/${BLOG.twitter}`;
+  }, []);
+  const linkedin = useMemo(() => {
+    if (!BLOG.linkedin) return null;
+    return `https://www.linkedin.com/in/${BLOG.linkedin}`;
   }, []);
   const switchTheme = () => {
     const isDark = theme.type === "dark";
@@ -64,11 +69,22 @@ const Contacts = () => {
             <Twitter />
           </Link>
         )}
+        {linkedin && (
+          <Link
+            aria-label="linkedin"
+            rel="noreferrer"
+            target="_blank"
+            href={linkedin}
+          >
+            <LinkedIn />
+          </Link>
+        )}
         <div className="line">
           <Spacer y={0.5} />
         </div>
 
-        <style jsx>{`
+        <style jsx>
+          {`
           .contacts {
             width: fit-content;
             display: flex;
@@ -104,7 +120,8 @@ const Contacts = () => {
               left: 1rem;
             }
           }
-        `}</style>
+        `}
+        </style>
       </div>
       <Spacer y={2.5} />
     </>
