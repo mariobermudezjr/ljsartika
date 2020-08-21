@@ -12,7 +12,7 @@ const BLOG = {
     list: "Posts",
   },
 
-  email: "lasriajoynettas@gmail.com",
+  email: "ljsartika@gmail.com",
   github: "LJSartika",
   twitter: "lj_sartika",
   domain: "ljsartika.com",
