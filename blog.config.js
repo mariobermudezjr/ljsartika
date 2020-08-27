@@ -14,7 +14,7 @@ const BLOG = {
 
   email: "ljsartika@gmail.com",
   github: "LJSartika",
-  twitter: "lj_sartika",
+  twitter: "sparklingstones",
   domain: "ljsartika.com",
   linkedin: "lasriajs",
 
