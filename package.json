@@ -7,12 +7,13 @@
     "export": "npm run now-build && next export"
   },
   "dependencies": {
-    "@zeit-ui/react": "1.7.5",
+    "@babel/runtime": "^7.17.8",
+    "@zeit-ui/react": "^1.8.1",
     "ms": "2.1.2",
-    "next": "9.3.6",
+    "next": "^12.1.2",
     "nextjs-sitemap-generator": "0.5.2",
-    "react": "16.13.0",
-    "react-dom": "16.13.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-twitter-embed": "3.0.3"
   },
   "devDependencies": {
