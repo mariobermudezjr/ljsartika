@@ -76,11 +76,11 @@ const Layout = ({ children, meta }: any) => {
         {inDetailPage && (
           <div className="share-sns">
             <Spacer y={0.5} />
-            <Button type="success" onClick={click} ghost>
+            {/* <Button type="success" onClick={click} ghost>
               <Link href={tweetlink} target="_blank">
                 Share on Twitter
               </Link>
-            </Button>
+            </Button> */}
           </div>
         )}
         <Spacer y={5} />
