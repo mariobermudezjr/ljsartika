@@ -5,6 +5,7 @@ import useConfigs from "../states/config-context";
 import Github from "./icons/github";
 import Twitter from "./icons/twitter";
 import LinkedIn from "./icons/linkedin";
+import Medium from './icons/medium'
 import Mail from "./icons/mail";
 import Sun from "./icons/sun";
 import Moon from "./icons/moon";
@@ -28,6 +29,10 @@ const Contacts = () => {
   const linkedin = useMemo(() => {
     if (!BLOG.linkedin) return null;
     return `https://www.linkedin.com/in/${BLOG.linkedin}`;
+  }, []);
+  const medium = useMemo(() => {
+    if (!BLOG.medium) return null;
+    return `${BLOG.medium}`;
   }, []);
   const switchTheme = () => {
     const isDark = theme.type === "dark";
@@ -77,6 +82,16 @@ const Contacts = () => {
             href={linkedin}
           >
             <LinkedIn />
+          </Link>
+        )}
+         {medium && (
+          <Link
+            aria-label="medium"
+            rel="noreferrer"
+            target="_blank"
+            href={medium}
+          >
+            <Medium />
           </Link>
         )}
         <div className="line">
