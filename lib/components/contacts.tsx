@@ -2,7 +2,6 @@ import React, { useMemo } from "react";
 import { useTheme, Spacer, Link } from "@zeit-ui/react";
 import BLOG from "../../blog.config";
 import useConfigs from "../states/config-context";
-import Github from "./icons/github";
 import Twitter from "./icons/twitter";
 import LinkedIn from "./icons/linkedin";
 import Medium from './icons/medium'
@@ -17,10 +16,6 @@ const Contacts = () => {
   const email = useMemo(() => {
     if (!BLOG.email) return null;
     return `mailto:${BLOG.email}`;
-  }, []);
-  const github = useMemo(() => {
-    if (!BLOG.github) return null;
-    return `https://github.com/${BLOG.github}`;
   }, []);
   const twitter = useMemo(() => {
     if (!BLOG.twitter) return null;
@@ -54,16 +49,7 @@ const Contacts = () => {
             <Mail />
           </Link>
         )}
-        {github && (
-          <Link
-            aria-label="github"
-            rel="noreferrer"
-            target="_blank"
-            href={github}
-          >
-            <Github />
-          </Link>
-        )}
+        
         {twitter && (
           <Link
             aria-label="twitter"

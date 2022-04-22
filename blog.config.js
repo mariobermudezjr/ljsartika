@@ -16,7 +16,7 @@ const BLOG = {
   github: 'LJSartika',
   twitter: 'ljsartika_',
   domain: 'ljsartika.com',
-  linkedin: 'lasriajs',
+  linkedin: 'ljsartika',
   medium: 'https://ljsartika.medium.com/',
 
   cn: false,
