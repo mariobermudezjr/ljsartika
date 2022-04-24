@@ -10,7 +10,7 @@ const getFixes = (metas: any) => {
 };
 
 const fillSpace = (name: string) => {
-  return name.replace(/ /g, "_").replace(".mdx", "");
+  return name.replace(/ /g, " ").replace(".mdx", "");
 };
 
 const makeLink = (data: any) => {
