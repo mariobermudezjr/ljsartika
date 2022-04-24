@@ -1,8 +1,8 @@
 const BLOG = {
-  author: 'Lasria J. Sartika',
-  title: 'Lasria J. Sartika',
+  author: 'L.J. Sartika',
+  title: 'L.J. Sartika',
   description: 'Lasria Joynetta Sartika',
-  summary: 'Project management and project engineering ...',
+  summary: '',
   language: 'en',
   latestLimit: 4,
 
